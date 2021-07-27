@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realidade Virtual</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../../_imagens/img.png">
+  <link rel="stylesheet" type="text/css" href="../../_css/games.css">
+  <link rel="stylesheet" type="text/css" href="../../_css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../_css/card.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gugi">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+
+
+
+  <div lang="pt" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang"> <img class="flag" src="https://image.flaticon.com/icons/svg/330/330461.svg"/> </button>
+
+      <div class="vr"><b>Realidade</b> <img class="logo" src="../../_imagens/img.png" /> <b>Virtual</b></div>
+
+      <ul>
+        <li class="letra"><a href="../index_log.html">Início</a></li>
+        <li class="letra"><a href="../produtos_log.html">Produtos</a></li>
+        <li class="letra"><a href="../jogos_log.html">Jogos</a></li>
+        <li class="letra"><a href="../info_log.html">Sobre</a></li>
+        <li class="letra"><a class="active" href="../../index.html">Sair</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+  <div lang="en" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang2"><img class="flag" src="https://image.flaticon.com/icons/svg/581/581060.svg"/></button>
+
+      <div class="vr"><b>Virtual</b> <img class="logo" src="../../_imagens/img.png" /> <b>Reality</b></div>
+
+      <ul>
+        <li class="letra"><a href="../index_log.html">Home</a></li>
+        <li class="letra"><a href="../produtos_log.html">Products</a></li>
+        <li class="letra"><a href="../jogos_log.html">Games</a></li>
+        <li class="letra"><a href="../info_log.html">About</a></li>
+        <li class="letra"><a class="active" href="../../index.html">Logout</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+
+  <div class="cd-cart-container empty">
+    <a href="#0" class="cd-cart-trigger">
+    		Cart
+    		<ul class="count">
+    			<li>0</li>
+    			<li>0</li>
+    		</ul>
+    	</a>
+
+
+    <div class="cd-cart">
+      <div class="wrapper">
+        <header>
+          <h2 lang="pt">Carrinho</h2>
+          <h2 lang="en">Cart</h2>
+          <span class="undo"><p lang="pt">Item removido. </p><p lang="en">Item removed. </p>
+              <a href="#0"><p lang="pt">Desfazer</p><p lang="en">Undo</p></a></span>
+        </header>
+
+        <div class="body">
+          <ul>
+
+          </ul>
+        </div>
+        <footer>
+          <a href="#0" class="checkout btn"><em>Total - €<span>0</span></em></a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="video">
+    <iframe width="100%" height="520" src="https://www.youtube.com/embed/P1RnmMvSHQg">
+          </iframe>
+  </div>
+
+
+  <section id="showcase">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="showcase-left">
+            <h2 class="name">Dreadhalls</h2>
+
+            <h6 class="tipo">Samsung Gear</h6>
+            <h6 class="tipo">HTC Vive</h6>
+            <h6 class="tipo">Oculus Rift</h6>
+            <h6 class="tipo">Google Daydream</h6>
+
+            <div lang="pt">
+              <p> Se é fã de jogos de terror, então o Dreadhalls deveria estar no seu beco. Acorda dentro de uma masmorra mal iluminada sem armas, e nada além de uma pequena lanterna que ajuda a iluminar a sala. Você terá que encontrar o seu caminho para
+                fora do calabouço usando nada além de sua inteligência para escapar do monstro à espreita nos corredores.</p>
+              <p>Dreadhalls é um jogo de terror atmosférico que fará você pular enquanto olha em cada esquina. A masmorra é processualmente gerada para que você nunca veja o mesmo layout duas vezes.</p>
+            </div>
+
+            <div lang="en">
+              <p> If you're a fan of horror games, then Dreadhalls ought to be right up your alley. You wake up inside of a dimly lit dungeon with no weapons, and nothing but a small lantern that helps to illuminate the room. You'll have to find your way
+                out of the dungeon using nothing but your wits to escape the monster lurking in the halls.</p>
+              <p>Dreadhalls is an atmospheric horror game that will have you jumping as you peer around every corner. The dungeon is procedurally generated so you'll never see the exact same layout twice. </p>
+            </div>
+
+
+
+
+            <div class="bs-example">
+              <div id="myCarousel" class="carousel slide" data-interval="6500" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="active item carousel-fade">
+
+                    <img src="../../_imagens/img_df/df1.png" width="100%" />
+
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                  <div class="item carousel-fade">
+                    <img src="../../_imagens/img_df/df2.png" width="100%" />
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                  <div class="item carousel-fade">
+                    <img src="../../_imagens/img_df/df3.png" width="100%">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                  <div class="item carousel-fade">
+                    <img src="../../_imagens/img_df/df4.png" width="100%" />
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                  <div class="glyphicon glyphicon-chevron-left"></div>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                  <div class="glyphicon glyphicon-chevron-right"></div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-sd-4">
+          <div class="showcase-rigth">
+
+
+            <div class="columns3">
+              <ul class="price4">
+                <li class="header"></li>
+                <li class="grey">4.99€</li>
+                <li><a href="#0" class="cd-add-to-cart-df-gear" data-price="4.99" lang="pt">Adicionar Carrinho</a></li>
+                <li><a href="#0" class="cd-add-to-cart-df-gear" data-price="4.99" lang="en">Add To Cart</a></li>
+              </ul>
+            </div>
+            <div class="columns3">
+              <ul class="price2">
+                <li class="header"></li>
+                <li class="grey">9.99€</li>
+                <li><a href="#0" class="cd-add-to-cart-df-vive" data-price="9.99" lang="pt">Adicionar Carrinho</a></li>
+                <li><a href="#0" class="cd-add-to-cart-df-vive" data-price="9.99" lang="en">Add To Cart</a></li>
+
+              </ul>
+
+            </div>
+
+            <div class="columns3">
+              <ul class="price3">
+                <li class="header"></li>
+                <li class="grey">9.99€</li>
+                <li><a href="#0" class="cd-add-to-cart-df-rift" data-price="9.99" lang="pt">Adicionar Carrinho</a></li>
+                <li><a href="#0" class="cd-add-to-cart-df-rift" data-price="9.99" lang="en">Add To Cart</a></li>
+              </ul>
+            </div>
+            <div class="columns3">
+              <ul class="price5">
+                <li class="header"></li>
+                <li class="grey">4.99€</li>
+                <li><a href="#0" class="cd-add-to-cart-df-day" data-price="4.99" lang="pt">Adicionar Carrinho</a></li>
+                <li><a href="#0" class="cd-add-to-cart-df-day" data-price="4.99" lang="en">Add To Cart</a></li>
+
+              </ul>
+
+            </div>
+
+
+            <div class="columns3">
+              <ul class="price4" lang="pt">
+
+                <li id="imm"><img src="../../_imagens/icon-u.png"><br>1 Jogador</li>
+                <li id="imm"><img src="../../_imagens/icon-w.png"><br>Offline</li>
+
+
+              </ul>
+
+              <ul class="price4" lang="en">
+
+                <li id="imm"><img src="../../_imagens/icon-u.png"><br>1 Player</li>
+                <li id="imm"><img src="../../_imagens/icon-w.png"><br>Offline</li>
+
+
+              </ul>
+            </div>
+
+            <div class="columns3">
+              <ul class="price4" lang="pt">
+
+
+                <li id="imm"><img src="../../_imagens/icon-rm.png"><br>Necessário Comando</li>
+                <li id="imm"><img src="../../_imagens/icon-r.png"><br>Classificação <br> <b>4.7</b></li>
+
+              </ul>
+
+              <ul class="price4" lang="en">
+
+
+                <li id="imm"><img src="../../_imagens/icon-rm.png"><br>Needs Remote</li>
+                <li id="imm"><img src="../../_imagens/icon-r.png"><br>Rating <br> <b>4.7</b></li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <h1 class="dtl" lang="pt"> Detalhes Adicionais </h1>
+  <h1 class="dtl" lang="en"> Adicional Details </h1>
+
+  <div class="container" lang="pt">
+    <table class="table">
+
+
+
+      <tr>
+        <tbody>
+          <th class="ce">Idiomas</th>
+          <td class="cd">Inglês</td>
+          <td class="cd">Francês</td>
+          <td class="cd">Espanhol</td>
+          <td class="cd">Alemão</td>
+          <td class="cd">Coreano</td>
+        </tbody>
+      </tr>
+
+
+      <tr>
+        <tbody>
+          <th class="ce">Modos de Jogo</th>
+          <td class="cd">Em Pé</td>
+          <td class="cd">Divisão<br>Completa</td>
+          <td class="cd">Sentado</td>
+        </tbody>
+
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce">Gêneros</th>
+          <td class="cd">Terror</td>
+          <td class="cd">Exploração</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Versão Android</th>
+          <td class="cd2">7.0 ou superior</td>
+
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+          <th class="ce">Desenvolvedor</th>
+          <td class="cd">White Door <br>Games</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce">Espaço Necessário</th>
+          <td class="cd">Telemóvel <br> 473.72 MB</td>
+          <td class="cd">PC <br>1024 MB</td>
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+          <th class="ce2">PEGI 12</th>
+          <td class="cd2">Terror</td>
+
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <h1 class="dtl">Especificações</h1>
+
+
+    <table class="table">
+      <h3><b>Mínimos</b></h3>
+
+      <tr>
+        <tbody>
+          <th class="ce2">Sistema Operativo</th>
+          <td class="cd2">Windows 7 - 64 bit</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Processador</th>
+          <td class="cd2">Intel i5-4590 / AMD FX 8350 igual ou melhor</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Memória</th>
+          <td class="cd2">4 GB de RAM</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Placa Gráfica</th>
+          <td class="cd2">Nvidia GTX 970 / AMD R9 290 igual ou melhor</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">DirectX</th>
+          <td class="cd2">Versão 11</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Espaço no disco</th>
+          <td class="cd2">Requer 1024 MB de espaço livre</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+
+        </tbody>
+      </tr>
+
+    </table>
+
+
+
+
+
+
+  </div>
+
+
+
+  <div class="container" lang="en">
+    <table class="table">
+
+
+      <tr>
+        <tbody>
+          <th class="ce">Language</th>
+          <td class="cd">English</td>
+          <td class="cd">French</td>
+          <td class="cd">Spannish</td>
+          <td class="cd">German</td>
+          <td class="cd">Korean</td>
+        </tbody>
+      </tr>
+
+
+      <tr>
+        <tbody>
+          <th class="ce">Game Position</th>
+          <td class="cd">Standing</td>
+          <td class="cd">All<br>Division</td>
+          <td class="cd">Sitdown</td>
+        </tbody>
+
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce">Genre</th>
+          <td class="cd">Scary</td>
+          <td class="cd">Discover</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Android Version</th>
+          <td class="cd2">7.0 or better</td>
+
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+          <th class="ce">Developer</th>
+          <td class="cd">White Door <br>Games</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce">Space Needed</th>
+          <td class="cd">Mobile <br> 473.72 MB</td>
+          <td class="cd">PC <br>1024 MB</td>
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+          <th class="ce2">PEGI 12</th>
+          <td class="cd2">Scary</td>
+
+        </tbody>
+      </tr>
+
+      <tr>
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+
+
+
+    <h1 class="dtl">Specs</h1>
+
+
+    <table class="table">
+      <h3><b>Minimum</b></h3>
+
+      <tr>
+        <tbody>
+          <th class="ce2">OS</th>
+          <td class="cd2">Windows 7 - 64 bit</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Processor</th>
+          <td class="cd2">Intel i5-4590 / AMD FX 8350 equivalent or better</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Memory</th>
+          <td class="cd2">4 GB RAM</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Graphic Card</th>
+          <td class="cd2">Nvidia GTX 970 / AMD R9 290 equivalent or better</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">DirectX</th>
+          <td class="cd2">Version 11</td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+          <th class="ce2">Space Needed</th>
+          <td class="cd2">Needs 1024 MB of free space </td>
+        </tbody>
+      </tr>
+      <tr>
+        <tbody>
+
+        </tbody>
+      </tr>
+
+    </table>
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+
+  </div>
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="border-top:1px solid grey;">
+      <div class="row text-center">
+        <div class="col-lg-6 col-lg-offset-3">
+          <ul class="menu" lang="pt">
+
+            <li>
+              <a href="index_log.html">Início</a>
+            </li>
+
+            <li>
+              <a href="produtos_log.html">Produtos</a>
+            </li>
+
+            <li>
+              <a href="jogos_log.html">Jogos</a>
+            </li>
+
+            <li>
+              <a href="info_log.html">Sobre</a>
+            </li>
+
+            <li>
+              <a href="#">Logar</a>
+            </li>
+
+
+          </ul>
+
+          <ul class="menu" lang="en">
+
+            <li>
+              <a href="index_log.html">Home</a>
+            </li>
+
+            <li>
+              <a href="produtos_log.html">Products</a>
+            </li>
+
+            <li>
+              <a href="jogos_log.html">Games</a>
+            </li>
+
+            <li>
+              <a href="info_log.html">About</a>
+            </li>
+
+            <li>
+              <a href="#">Login</a>
+            </li>
+
+
+          </ul>
+          <p class="copy">Copyright © 2018 All rights reserved</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+  <script type="text/javascript" src="../../_javascript/games.js"></script>
+  <script type="text/javascript" src="../../_javascript/main.js"></script>
+
+</body>
+
+</html>

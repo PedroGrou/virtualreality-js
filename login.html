@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realidade Virtual</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="_imagens/img.png">
+  <link rel="stylesheet" type="text/css" href="_css/login.css">
+  <link rel="stylesheet" type="text/css" href="_css/style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gugi">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+  <div lang="pt" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang"> <img class="flag" src="https://image.flaticon.com/icons/svg/330/330461.svg"/> </button>
+
+      <div class="vr"><b>Realidade</b> <img class="logo" src="_imagens/img.png" /> <b>Virtual</b></div>
+
+      <ul>
+        <li class="letra"><a href="index.html">Início</a></li>
+        <li class="letra"><a href="produtos.html">Produtos</a></li>
+        <li class="letra"><a href="jogos.html">Jogos</a></li>
+        <li class="letra"><a href="info.html">Sobre</a></li>
+        <li class="letra"><a class="active" href="login.html">Logar</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+  <div lang="en" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang2"><img class="flag" src="https://image.flaticon.com/icons/svg/581/581060.svg"/></button>
+
+      <div class="vr"><b>Virtual</b> <img class="logo" src="_imagens/img.png" /> <b>Reality</b></div>
+
+      <ul>
+        <li class="letra"><a href="index.html">Home</a></li>
+        <li class="letra"><a href="produtos.html">Products</a></li>
+        <li class="letra"><a href="jogos.html">Games</a></li>
+        <li class="letra"><a href="info.html">About</a></li>
+        <li class="letra"><a class="active" href="login.html">Login</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+  </div>
+
+
+  <div class="logback2">
+    <div class="logback">
+
+
+
+      <div class="form">
+
+        <ul class="tab-group" lang="pt">
+
+          <li class="tab active"><a href="#signup">Registar</a></li>
+          <li class="tab"><a href="#login">Logar</a></li>
+        </ul>
+
+        <ul class="tab-group" lang="en">
+
+          <li class="tab active"><a href="#signup">Sign Up</a></li>
+          <li class="tab"><a href="#login">Log In</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="signup">
+            <h1 lang="pt">Regista-te Gratuitamente</h1>
+            <h1 lang="en">Sign Up for Free</h1>
+
+            <form action="/" method="post">
+
+
+              <div class="field-wrap">
+                <label>
+                  <div lang="pt">
+                  Nome de Usuário *
+                </div>
+                <div lang="en">
+                  User Name *</div>
+                  <span class="req"></span>
+                </label>
+
+                <input id="name1" type="text" required autocomplete="off" />
+              </div>
+
+
+
+
+              <div class="field-wrap">
+                <label>
+              E-mail *
+              <span class="req"></span>
+            </label>
+                <input type="email" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+              Password *<span class="req"></span>
+            </label>
+
+                <input id="pw" type="password" required autocomplete="off" />
+              </div>
+              <div lang="pt">
+                <input id="rgstr_btn" type="submit" value="Registar" class="button button-block" onClick="store()" />
+              </div>
+
+              <div lang="en">
+                <input id="rgstr_btn" type="submit" value="Register" class="button button-block" onClick="store2()" />
+              </div>
+
+
+            </form>
+
+          </div>
+
+          <div id="login">
+            <h1 lang="pt">Bem-vindo!</h1>
+            <h1 lang="en">Welcome Back!</h1>
+
+            <form action="/" method="post">
+
+              <div class="field-wrap">
+                <label>
+                <div lang="pt">
+                Nome de Usuário *
+                </div>
+
+
+
+              <div lang="en">
+              User Name *
+              </div>
+              <span class="req"></span>
+
+            </label>
+                <input id="userName" type="text" required autocomplete="off" />
+              </div>
+
+              <div class="field-wrap">
+                <label>
+              Password *<span class="req"></span>
+            </label>
+                <input id="userPw" type="password" required autocomplete="off" />
+              </div>
+
+              <p class="forgot" lang="pt"><a href="#">Esqueci-me Password?</a></p>
+              <p class="forgot" lang="en"><a href="#">Forgot Password?</a></p>
+              <div lang="pt">
+                <input id="login_btn" value="Entrar" type="submit" class="button button-block" onclick="check()" />
+              </div>
+              <div lang="en">
+                <input id="login_btn" value="Enter" type="submit" class="button button-block" onclick="check2()" />
+              </div>
+
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+        </div>
+        <div class="col-lg-2 col-xs-12 text-center">
+          <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="border-top:1px solid grey;">
+      <div class="row text-center">
+        <div class="col-lg-6 col-lg-offset-3">
+          <ul class="menu" lang="pt">
+
+            <li>
+              <a href="index.html">Início</a>
+            </li>
+
+            <li>
+              <a href="produtos.html">Produtos</a>
+            </li>
+
+            <li>
+              <a href="jogos.html">Jogos</a>
+            </li>
+
+            <li>
+              <a href="info.html">Sobre</a>
+            </li>
+
+            <li>
+              <a href="#">Logar</a>
+            </li>
+
+
+          </ul>
+
+          <ul class="menu" lang="en">
+
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="produtos.html">Products</a>
+            </li>
+
+            <li>
+              <a href="jogos.html">Games</a>
+            </li>
+
+            <li>
+              <a href="info.html">About</a>
+            </li>
+
+            <li>
+              <a href="#">Login</a>
+            </li>
+
+
+          </ul>
+          <p class="copy">Copyright © 2018 All rights reserved</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </footer>
+
+
+
+  <script src="_javascript/main.js"></script>
+  <script src="_javascript/log.js"></script>
+
+</body>
+
+
+</html>

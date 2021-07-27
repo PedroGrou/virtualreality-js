@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Realidade Virtual</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="../_imagens/img.png">
+  <link rel="stylesheet" type="text/css" href="../_css/produtos.css">
+  <link rel="stylesheet" type="text/css" href="../_css/style.css">
+  <link rel="stylesheet" type="text/css" href="../_css/card.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Do+Hyeon|Gugi">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+  <div lang="pt" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang"> <img class="flag" src="https://image.flaticon.com/icons/svg/330/330461.svg"/> </button>
+
+      <div class="vr"><b>Realidade</b> <img class="logo" src="../_imagens/img.png" /> <b>Virtual</b></div>
+
+      <ul>
+        <li class="letra"><a href="index_log.html">Início</a></li>
+        <li class="letra"><a href="produtos_log.html">Produtos</a></li>
+        <li class="letra"><a href="jogos_log.html">Jogos</a></li>
+        <li class="letra"><a href="info_log.html">Sobre</a></li>
+        <li class="letra"><a class="active" href="../index.html">Sair</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+  <div lang="en" class="wrapper">
+
+    <nav class="nav1 navbar-default navbar-fixed-top">
+      <button id="switch-lang2"><img class="flag" src="https://image.flaticon.com/icons/svg/581/581060.svg"/></button>
+
+      <div class="vr"><b>Virtual</b> <img class="logo" src="../_imagens/img.png" /> <b>Reality</b></div>
+
+      <ul>
+        <li class="letra"><a href="index_log.html">Home</a></li>
+        <li class="letra"><a href="produtos_log.html">Products</a></li>
+        <li class="letra"><a href="jogos_log.html">Games</a></li>
+        <li class="letra"><a href="info_log.html">About</a></li>
+        <li class="letra"><a class="active" href="../index.html">Logout</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+
+
+
+
+
+  <div class="cd-cart-container empty">
+    <a href="#0" class="cd-cart-trigger">
+		Cart
+		<ul class="count">
+			<li>0</li>
+			<li>0</li>
+		</ul>
+	</a>
+
+
+    <div class="cd-cart">
+      <div class="wrapper">
+        <header>
+          <h2 lang="pt">Carrinho</h2>
+          <h2 lang="en">Cart</h2>
+          <span class="undo"><p lang="pt">Item removido. </p><p lang="en">Item removed. </p>
+          <a href="#0"><p lang="pt">Desfazer</p><p lang="en">Undo</p></a></span>
+        </header>
+
+        <div class="body">
+          <ul>
+            <!-- Produtos adicionados aqui no javascript -->
+          </ul>
+        </div>
+        <footer>
+          <a href="#0" class="checkout btn"><em>Total - €<span>0</span></em></a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="samge">
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <div id="content">
+                <div id="featured_img">
+                  <img id="img" src="../_imagens/vr_1.png">
+                </div>
+                <div id="thumb_img" class="cf">
+                  <img class="active" src="../_imagens/vr_1.png" onclick="changeimg('../_imagens/vr_1.png',this);">
+                  <img src="../_imagens/vr_1_1.png" onclick="changeimg('../_imagens/vr_1_1.png',this);">
+                  <img src="../_imagens/vr_1_2.png" onclick="changeimg('../_imagens/vr_1_2.png',this);">
+                </div>
+
+
+                <div class="video" hidden>
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/gghYoUlhyVU">
+            </iframe>
+                </div>
+                <div class="buy" hidden oninput="calc_total();">
+
+                  <h2 class="letra3"> <b>49,99€</b> </h2>
+
+
+                  <a href="#0" class="cd-add-to-cart" data-price="49.99" lang="pt">Adicionar Carrinho</a>
+                  <a href="#0" class="cd-add-to-cart" data-price="49.99" lang="en">Add To Cart</a>
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="showcase-rigth">
+              <h1 class="head"> <a href="http://www.samsung.com/global/galaxy/gear-vr/" target="_blank"> <b>Samsung Gear VR</b> </a></h1>
+
+              <div lang="pt">
+                <p class="letra2"> A realidade virtual em 360º leva-o para um novo mundo, nunca antes imaginado. Pode olhar para cima, para baixo e à sua volta. Tem tudo para explorar. Entre na realidade virtual e desfrute da experiência como se estivesse lá.</p>
+                <p class="letra2">Tudo é possível quando está dentro do Gear VR. Escolha aquilo que prefere ver: assistir a um filme ou a um concerto de música, ver um jogo de futebol ou ainda desfrutar de uma coleção de jogos.</p>
+
+              </div>
+
+              <div lang="en">
+                <p class="letra2">360º virtual reality takes you to a new world, never before imagined. You can look up, down, and around you. It has everything to explore. Get into virtual reality and enjoy the experience as if you were there.</p>
+                <p class="letra2">Everything is possible when you are inside Gear VR. Choose what you prefer to watch: watch a movie or music concert, watch a football game, or enjoy a collection of games.</p>
+              </div>
+
+
+
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="specs">
+        <a><span class="spot"></span><div lang="pt"><b>Especificações</b></div> <div lang="en"><b>Specs</b></div></a>
+      </div>
+    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="video">
+        <a><span class="spot"></span><div lang="pt"><b>Vídeo</b></div> <div lang="en"><b>Video</b></div></a>
+      </div>
+    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+      <rect id="shape" height="40" width="150" />
+      <div id="preco">
+        <a><span class="spot"></span><div lang="pt"><b>Preço</b></div> <div lang="en"><b>Price</b></div></a>
+      </div>
+    </svg>
+              </div>
+
+
+
+
+
+
+              <div class="table1" hidden>
+
+                <div lang="pt">
+                  <table class="table">
+
+                    <tr>
+                      <tbody>
+
+                        <td class="ce"><b>Objetiva ótica</b></td>
+                        <td class="cd">Campo de visão de 96˚w</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensor</b></td>
+                        <td class="cd">Acelerómetro, Giroscópio, Magnético, Proximidade</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Latência de movimento de fotão</b></td>
+                        <td class="cd">
+                          < 20 ms</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ajuste focal</b></td>
+                        <td class="cd">Abrange olhos com problemas de visão ao perto / ao longe</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Cobertura da distância interpupilar</b></td>
+                        <td class="cd">55 ~ 71 mm</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Interface do utilizador física</b></td>
+                        <td class="cd">Touch Pad, Botão retroceder, Tecla de volume</tr>
+                    </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ligação</b></td>
+                        <td class="cd">Ligação microUSB 1.1</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Dimensões (auscultadores)</b></td>
+                        <td class="cd">198 (L) x 116 (C) x 90 (A) mm</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+                  </table>
+                </div>
+
+
+                <div lang="en">
+                  <table class="table">
+
+                    <tr>
+                      <tbody>
+
+                        <td class="ce"><b>Optical Objective</b></td>
+                        <td class="cd">Vision Field 96˚w</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensor</b></td>
+                        <td class="cd">Accelerometer, Gyroscope, Magnetic, Proximity</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Photon motion latency</b></td>
+                        <td class="cd">
+                          < 20 ms</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Focal adjustment</b></td>
+                        <td class="cd">Covers eyes with near or far vision problems</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Interpupillary distance coverage</b></td>
+                        <td class="cd">55 ~ 71 mm</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Physical user interface</b></td>
+                        <td class="cd">Touch Pad, Back button, Volume key</tr>
+                    </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Connection</b></td>
+                        <td class="cd">microUSB 1.1</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Dimensions (Headsets)</b></td>
+                        <td class="cd">198 (W) x 116 (L) x 90 (H) mm</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+                  </table>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="showcase2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <h1 class="head"> <a href="https://www.playstation.com/pt-pt/explore/playstation-vr/" target="_blank"> Sony PlayStation VR </a></h1>
+
+
+              <p class="letra2" lang="pt">Descubra novos mundos, tornando-se o protagonista da história. Com o PlayStation VR, tem a oportunidade de ver ambientes 3D hiperrealistas, graças à sua tela OLED de 5,7 polegadas. Não importa para onde vira a cabeça, com a VR pode desfrutar
+                de uma imersão total de 360 ​​graus nos seus jogos para desfrutar de um campo de visão mais fluido. Combina gráficos fluidos para oferecer-lhe um mundo ideal e atraente.</p>
+
+              <p class="letra2" lang="en">Discover new worlds by becoming the protagonist of the story. With PlayStation VR, you have the opportunity to see hyper-realistic 3D environments, thanks to its 5.7-inch OLED screen. No matter where you turn your head, with the VR you can
+                enjoy a full 360 degree immersion in your games to enjoy a more fluid field of vision. It combines fluid graphics to give you an ideal and attractive world.</p>
+
+
+
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="specs2">
+                        <a><span class="spot"></span><div lang="pt"><b>Especificações</b></div> <div lang="en"><b>Specs</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="video2">
+                        <a><span class="spot"></span><div lang="pt"><b>Vídeo</b></div> <div lang="en"><b>Video</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="preco2">
+                        <a><span class="spot"></span><div lang="pt"><b>Preço</b></div> <div lang="en"><b>Price</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+
+
+
+              <div class="table2" hidden>
+
+
+                <div lang="pt">
+                  <table class="table">
+
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ecrã</b></td>
+                        <td class="cd">5,7 polegadas OLED</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolução</b></td>
+                        <td class="cd">1920 x RGB x 1080 (960 x RGB x 1080)</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Taxa de atualização</b></td>
+                        <td class="cd"> 120 hz, 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Campo de visão</b></td>
+                        <td class="cd">aprox. 100 graus</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microfone</b></td>
+                        <td class="cd">incorporado</td>
+                      </tbody>
+
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensores</b></td>
+                        <td class="cd">acelerómetro, giroscópio</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ligação</b></td>
+                        <td class="cd">HDMI, USB</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Dimensões</b></td>
+                        <td class="cd">aprox. 187×185×277 mm (largura × altura × comprimento;</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Peso</b></td>
+                        <td class="cd">Aprox. 600g (excluindo o cabo)</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                      </tbody>
+
+                    </tr>
+
+                  </table>
+
+                </div>
+
+
+                <div lang="en">
+                  <table class="table">
+
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Screen</b></td>
+                        <td class="cd">5,7 inches OLED</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolution</b></td>
+                        <td class="cd">1920 x RGB x 1080 (960 x RGB x 1080)</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Refresh Rate</b></td>
+                        <td class="cd"> 120 hz, 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Vision Field</b></td>
+                        <td class="cd">nearly 100 graus</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microphone</b></td>
+                        <td class="cd">integrated</td>
+                      </tbody>
+
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensor</b></td>
+                        <td class="cd">accelerometer, gyroscope</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Connection</b></td>
+                        <td class="cd">HDMI, USB</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Dimension</b></td>
+                        <td class="cd"> 187×185×277 mm (width × height × length)</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Weight</b></td>
+                        <td class="cd"> 600g (not including cable)</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                      </tbody>
+
+                    </tr>
+
+                  </table>
+
+                </div>
+
+
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="showcase-rigth">
+              <div id="content">
+                <div id="featured_img2">
+                  <img id="img2" src="../_imagens/vr_2.png">
+                </div>
+                <div id="thumb_img2" class="cf">
+                  <img class="active" src="../_imagens/vr_2.png" onclick="changeimg2('../_imagens/vr_2.png',this);">
+                  <img src="../_imagens/vr_2_1.png" onclick="changeimg2('../_imagens/vr_2_1.png',this);">
+                  <img src="../_imagens/vr_2_2.png" onclick="changeimg2('../_imagens/vr_2_2.png',this);">
+                </div>
+
+
+                <div class="video2" hidden>
+                  <iframe width="510" height="315" src="https://www.youtube.com/embed/0kvVRNUYqYo">
+              </iframe>
+                </div>
+                <div class="buy2" hidden oninput="calc_total2();">
+                  <h2 class="letra3"> <b>299,99€</b> </h2>
+
+
+                  <a href="#0" class="cd-add-to-cart2" data-price="299.99" lang="pt">Adicionar Carrinho</a>
+                  <a href="#0" class="cd-add-to-cart2" data-price="299.99" lang="en">Add To Cart</a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <div id="content">
+                <div id="featured_img3">
+                  <img id="img3" src="../_imagens/vr_3.png">
+                </div>
+                <div id="thumb_img3" class="cf">
+                  <img class="active" src="../_imagens/vr_3.png" onclick="changeimg3('../_imagens/vr_3.png',this);">
+                  <img src="../_imagens/vr_3_1.png" onclick="changeimg3('../_imagens/vr_3_1.png',this);">
+                  <img src="../_imagens/vr_3_2.png" onclick="changeimg3('../_imagens/vr_3_2.png',this);">
+                </div>
+
+
+                <div class="video3" hidden>
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/i1r76omNeI8">
+              </iframe>
+                </div>
+                <div class="buy3" hidden oninput="calc_total3();">
+                  <h2 class="letra3"> <b>449,99€</b> </h2>
+
+
+                  <a href="#0" class="cd-add-to-cart3" data-price="449.99" lang="pt">Adicionar Carrinho</a>
+                  <a href="#0" class="cd-add-to-cart3" data-price="449.99" lang="en">Add To Cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="showcase-rigth">
+              <h1 class="head"> <a href="https://www.vive.com/us/" target="_blank"> <b>HTC Vive</b> </a></h1>
+              <div lang="pt">
+                <p class="letra2"> Assim que coloca os óculos VR será imergido num mundo cheio de surpresas. Explore livremente à sua volta. O sistema de direção Chaperone mantém-o dentro da sua área disponível.</p>
+                <p class="letra2"> Com uma resolução combinada de 2160x1200 e uma taxa de actualização de 90 Hz, os seus olhos irão delirar com gráficos incrivelmente detalhados e suaves.</p>
+              </div>
+
+              <div lang="en">
+                <p class="letra2"> Once you put on the VR glasses you will be immersed in a world full of surprises. Explore freely around you. The Chaperone steering system keeps you within your available area.</p>
+                <p class="letra2"> With a combined resolution of 2160x1200 and a refresh rate of 90Hz, your eyes will be delirious with incredibly detailed and smooth graphics.</p>
+              </div>
+
+
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="specs3">
+                        <a><span class="spot"></span><div lang="pt"><b>Especificações</b></div> <div lang="en"><b>Specs</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="video3">
+                        <a><span class="spot"></span><div lang="pt"><b>Vídeo</b></div> <div lang="en"><b>Video</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                      <rect id="shape" height="40" width="150" />
+                      <div id="preco3">
+                        <a><span class="spot"></span><div lang="pt"><b>Preço</b></div> <div lang="en"><b>Price</b></div></a>
+                      </div>
+                    </svg>
+              </div>
+
+
+
+
+
+
+              <div class="table3" hidden>
+
+                <div lang="pt">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ecrã</b></td>
+                        <td class="cd">Dual AMOLED 3.6’’ diagonal</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolução</b></td>
+                        <td class="cd">1080 x 1200 pixels por olho</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Taxa de atualização</b></td>
+                        <td class="cd"> 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Campo de visão</b></td>
+                        <td class="cd">aprox. 110 graus</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microfone</b></td>
+                        <td class="cd">incorporado</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensores</b></td>
+                        <td class="cd">SteamVR Tracking, G-sensor, acelerómetro, giroscópio</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ligação</b></td>
+                        <td class="cd">HDMI, USB 2.0, stereo 3.5 mm headphone jack, Power, Bluetooth</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+
+
+                  </table>
+
+                  <table class="table">
+
+                    <p class="pcesp"> <b>PC Especificações Recomendadas</b>
+                      <p>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Placa Gráfica</b></td>
+                            <td class="cd">NVIDIA® GeForce® GTX 1060 or AMD Radeon™ RX 480, igual ou melhor.</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Processador</b></td>
+                            <td class="cd">Intel® Core™ i5-4590 or AMD FX™ 8350, igual ou melhor</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Memória</b></td>
+                            <td class="cd"> 4 GB RAM ou mais</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Saida de Vídeo</b></td>
+                            <td class="cd">HDMI 1.4, DisplayPort 1.2 ou mais recente</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>USB</b></td>
+                            <td class="cd">1x USB 2.0 ou melhor</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Sistema Operativo</b></td>
+                            <td class="cd">Windows® 7 SP1, Windows® 8.1 or later, Windows® 10</td>
+                          </tbody>
+                        </tr>
+
+
+                        <tr>
+                          <tbody>
+
+                          </tbody>
+                        </tr>
+
+
+
+                  </table>
+
+                </div>
+
+
+
+                <div lang="en">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Screen</b></td>
+                        <td class="cd">Dual AMOLED 3.6’’ diagonal</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolution</b></td>
+                        <td class="cd">1080 x 1200 pixels per eye</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Refresh Rate</b></td>
+                        <td class="cd"> 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Vision Field</b></td>
+                        <td class="cd">nearly 110 graus</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microphone</b></td>
+                        <td class="cd">intergrated</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensor</b></td>
+                        <td class="cd">SteamVR Tracking, G-sensor, accelerometer, gyroscope</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Connection</b></td>
+                        <td class="cd">HDMI, USB 2.0, stereo 3.5 mm headphone jack, Power, Bluetooth</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+
+
+                  </table>
+
+                  <table class="table">
+
+                    <p class="pcesp"> <b>PC Recommended Specifications</b>
+                      <p>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Graphics Card</b></td>
+                            <td class="cd">NVIDIA® GeForce® GTX 1060 or AMD Radeon™ RX 480, equivalent or better</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>CPU</b></td>
+                            <td class="cd">Intel® Core™ i5-4590 or AMD FX™ 8350, equivalent or better</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Memory</b></td>
+                            <td class="cd"> 4 GB RAM or more</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Video Output</b></td>
+                            <td class="cd">HDMI 1.4, DisplayPort 1.2 or newer</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>USB</b></td>
+                            <td class="cd">1x USB 2.0 or better</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>OS</b></td>
+                            <td class="cd">Windows® 7 SP1, Windows® 8.1 or later, Windows® 10</td>
+                          </tbody>
+                        </tr>
+
+
+                        <tr>
+                          <tbody>
+
+                          </tbody>
+                        </tr>
+
+
+
+                  </table>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="showcase2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <h1 class="head"> <a href="https://www.oculus.com/rift/#oui-csl-rift-games=star-trek" target="_blank"> <b>Oculus Rift</b> </a></h1>
+
+              <div lang="pt">
+                <p class="letra2"> Oculus Rift é um equipamento de realidade virtual para jogos eletrónicos, desenvolvido e fabricado pela Oculus. Sistema visual do tipo Head-mounted display. O projeto está a ser desenvolvido pela Oculus VR.</p>
+              </div>
+
+              <div lang="en">
+                <p class="letra2"> Oculus Rift is a virtual reality gaming device developed and manufactured by Oculus. Head-mounted display. The project is being developed by Oculus VR.</p>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="shape" height="40" width="150" />
+                        <div id="specs4">
+                          <a><span class="spot"></span><div lang="pt"><b>Especificações</b></div> <div lang="en"><b>Specs</b></div></a>
+                        </div>
+                      </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="shape" height="40" width="150" />
+                        <div id="video4">
+                          <a><span class="spot"></span><div lang="pt"><b>Vídeo</b></div> <div lang="en"><b>Video</b></div></a>
+                        </div>
+                      </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                        <rect id="shape" height="40" width="150" />
+                        <div id="preco4">
+                          <a><span class="spot"></span><div lang="pt"><b>Preço</b></div> <div lang="en"><b>Price</b></div></a>
+                        </div>
+                      </svg>
+              </div>
+
+
+
+              <div class="table4" hidden>
+
+                <div lang="pt">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ecrã</b></td>
+                        <td class="cd">Dual OLED</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolução</b></td>
+                        <td class="cd">1080 x 1200 pixels por olho</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Taxa de atualização</b></td>
+                        <td class="cd"> 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microfone</b></td>
+                        <td class="cd">incorporado</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensores</b></td>
+                        <td class="cd">3 Giroscópios</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ligação</b></td>
+                        <td class="cd">HDMI 1.3, USB 2.0, stereo 3.5 mm headphone jack, Power, Bluetooth</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+
+
+                  </table>
+
+                  <table class="table">
+
+                    <p class="pcesp"> <b>PC Especificações Recomendadas</b>
+                      <p>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Placa gráfica</b></td>
+                            <td class="cd">NVIDIA GTX 1060/AMD Radeon RX 480 ou superior</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>CPU</b></td>
+                            <td class="cd">Intel i5-4590/AMD Ryzen 5 1500X ou superior</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Memória</b></td>
+                            <td class="cd">8GB+ RAM</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Saída de vídeo</b></td>
+                            <td class="cd">Saída de vídeo HDMI 1.3 compatível</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Portas USB</b></td>
+                            <td class="cd">Três portas USB 3.0, além de uma porta USB 2.0</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Sistema Operacional</b></td>
+                            <td class="cd">Windows 7 SP1 de 64 bits ou mais recente</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+
+                          </tbody>
+                        </tr>
+
+                  </table>
+                </div>
+
+
+
+                <div lang="en">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Screen</b></td>
+                        <td class="cd">Dual OLED</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolution</b></td>
+                        <td class="cd">1080 x 1200 pixels per eye</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Refresh Rate</b></td>
+                        <td class="cd"> 90 hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Microphone</b></td>
+                        <td class="cd">intergrated</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Sensor</b></td>
+                        <td class="cd">3 Gyroscopes</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Connection</b></td>
+                        <td class="cd">HDMI 1.3, USB 2.0, stereo 3.5 mm headphone jack, Power, Bluetooth</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+
+
+                  </table>
+
+                  <table class="table">
+
+                    <p class="pcesp"> <b>PC Recommended Specifications</b>
+                      <p>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Graphic Card</b></td>
+                            <td class="cd">NVIDIA GTX 1060/AMD Radeon RX 480 or better</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>CPU</b></td>
+                            <td class="cd">Intel i5-4590/AMD Ryzen 5 1500X or better</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Memory</b></td>
+                            <td class="cd">8GB+ RAM</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>Video Output</b></td>
+                            <td class="cd"> HDMI 1.3</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>USB</b></td>
+                            <td class="cd">3 ports USB 3.0, USB 2.0</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+                            <td class="ce"><b>OS</b></td>
+                            <td class="cd">Windows 7 SP1 de 64 bits or newer</td>
+                          </tbody>
+                        </tr>
+
+                        <tr>
+                          <tbody>
+
+                          </tbody>
+                        </tr>
+
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-md-6">
+            <div class="showcase-rigth">
+              <div id="content">
+                <div id="featured_img4">
+                  <img id="img4" src="../_imagens/vr_4.png">
+                </div>
+                <div id="thumb_img4" class="cf">
+                  <img class="active" src="../_imagens/vr_4.png" onclick="changeimg4('../_imagens/vr_4.png',this);">
+                  <img src="../_imagens/vr_4_1.png" onclick="changeimg4('../_imagens/vr_4_1.png',this);">
+                  <img src="../_imagens/vr_4_2.png" onclick="changeimg4('../_imagens/vr_4_2.png',this);">
+                </div>
+
+
+                <div class="video4" hidden>
+                  <iframe width="510" height="315" src="https://www.youtube.com/embed/5q6BcQq_yhw">
+                  </iframe>
+                </div>
+                <div class="buy4" hidden oninput="calc_total4();">
+                  <h2 class="letra3"> <b>299,99€</b> </h2>
+
+
+                  <a href="#0" class="cd-add-to-cart4" data-price="299.99" lang="pt">Adicionar Carrinho</a>
+                  <a href="#0" class="cd-add-to-cart4" data-price="299.99" lang="en">Add To Cart</a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="showcase-left">
+              <div id="content">
+                <div id="featured_img5">
+                  <img id="img5" src="../_imagens/vr_5.png">
+                </div>
+                <div id="thumb_img5" class="cf">
+                  <img class="active" src="../_imagens/vr_5.png" onclick="changeimg5('../_imagens/vr_5.png',this);">
+                  <img src="../_imagens/vr_5_1.png" onclick="changeimg5('../_imagens/vr_5_1.png',this);">
+                  <img src="../_imagens/vr_5_2.png" onclick="changeimg5('../_imagens/vr_5_2.png',this);">
+                </div>
+
+
+                <div class="video5" hidden>
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/rLLAA4ENIP4">
+                  </iframe>
+                </div>
+                <div class="buy5" hidden oninput="calc_total5();">
+                  <h2 class="letra3"> <b>79,99€</b> </h2>
+
+
+                  <a href="#0" class="cd-add-to-cart5" data-price="79.99" lang="pt">Adicionar Carrinho</a>
+                  <a href="#0" class="cd-add-to-cart5" data-price="79.99" lang="en">Add To Cart</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="showcase-rigth">
+              <h1 class="head"> <a href="https://vr.google.com/daydream/smartphonevr/" target="_blank"> Google Daydream View </a></h1>
+
+              <div lang="pt">
+                <p class="letra2"> O Daydream View é um óculos de realidade virtual anunciado pelo Google no dia 4 de outubro, junto com o Google Pixel, Google Pixel XL e o Chromecast Ultra. O gadget promete maior imersão em realidade virtual para smartphones munidos com
+                  tecnologia tecnologia Daydream, a começar pela linha Pixel.</p>
+              </div>
+
+              <div lang="en">
+                <p class="letra2"> Daydream View is a virtual reality glasses announced by Google on October 4 along with Google Pixel, Google Pixel XL and Chromecast Ultra. The gadget promises greater immersion in virtual reality for smartphones equipped with Daydream
+                  technology technology, starting with the Pixel line.</p>
+              </div>
+
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="40" width="150" />
+                          <div id="specs5">
+                            <a><span class="spot"></span><div lang="pt"><b>Especificações</b></div> <div lang="en"><b>Specs</b></div></a>
+                          </div>
+                        </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="40" width="150" />
+                          <div id="video5">
+                            <a><span class="spot"></span><div lang="pt"><b>Vídeo</b></div> <div lang="en"><b>Video</b></div></a>
+                          </div>
+                        </svg>
+              </div>
+
+              <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                          <rect id="shape" height="40" width="150" />
+                          <div id="preco5">
+                            <a><span class="spot"></span><div lang="pt"><b>Preço</b></div> <div lang="en"><b>Price</b></div></a>
+                          </div>
+                        </svg>
+              </div>
+
+
+
+
+              <div class="table5" hidden>
+
+                <div lang="pt">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Ecrã</b></td>
+                        <td class="cd">4,7 e 7 polegadas</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolução</b></td>
+                        <td class="cd">Mínima Full HD, mas o ideal é Quad-HD</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Taxa de Imagem</b></td>
+                        <td class="cd"> Pelo menos 60Hz no modo VR</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Suporte</b></td>
+                        <td class="cd">OpenGL 3.2 e Vulkan</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce">Bluetooth</td>
+                        <td class="cd">4.2</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+                  </table>
+
+                </div>
+
+                <div lang="en">
+                  <table class="table">
+
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Screen</b></td>
+                        <td class="cd">4,7 and 7 inches</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Resolution</b></td>
+                        <td class="cd">Mínima Full HD, ideal Quad-HD</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Refresh Rate</b></td>
+                        <td class="cd"> 60Hz</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Support</b></td>
+                        <td class="cd">OpenGL 3.2 and Vulkan</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+                        <td class="ce"><b>Bluetooth</b></td>
+                        <td class="cd">4.2</td>
+                      </tbody>
+                    </tr>
+
+                    <tr>
+                      <tbody>
+
+                      </tbody>
+                    </tr>
+
+                  </table>
+
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+
+
+
+    <footer>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+          </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+          </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+          </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+          </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+          </div>
+          <div class="col-lg-2 col-xs-12 text-center">
+            <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="border-top:1px solid grey;">
+        <div class="row text-center">
+          <div class="col-lg-6 col-lg-offset-3">
+            <ul class="menu" lang="pt">
+
+              <li>
+                <a href="index_log.html">Início</a>
+              </li>
+
+              <li>
+                <a href="produtos_log.html">Produtos</a>
+              </li>
+
+              <li>
+                <a href="jogos_log.html">Jogos</a>
+              </li>
+
+              <li>
+                <a href="info_log.html">Sobre</a>
+              </li>
+
+              <li>
+                <a href="#">Logar</a>
+              </li>
+
+
+            </ul>
+
+            <ul class="menu" lang="en">
+
+              <li>
+                <a href="index_log.html">Home</a>
+              </li>
+
+              <li>
+                <a href="produtos_log.html">Products</a>
+              </li>
+
+              <li>
+                <a href="jogos_log.html">Games</a>
+              </li>
+
+              <li>
+                <a href="info_log.html">About</a>
+              </li>
+
+              <li>
+                <a href="#">Login</a>
+              </li>
+
+
+            </ul>
+            <p class="copy">Copyright © 2018 All rights reserved</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="../_javascript/main.js"></script>
+    <script type="text/javascript" src="../_javascript/produtos.js"></script>
+
+
+
+</body>
+
+</html>
